@@ -43,3 +43,13 @@ spring:
 
 jwt:
   secret: asfd9asfdaoijfalkjl23u4oi5jlkjf98790890890ugojvakglsdfjn8yuh
+
+---
+# Configs for api-gaetway in k8s environment
+spring:
+  config:
+    activate:
+      on-profile: k8s
+
+jwt:
+  secret-key: ${JWT_SECRET}
